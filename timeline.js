@@ -44,7 +44,7 @@ function displayTimeline(data) {
     div.addEventListener('click', () => {
       const periodEncoded = encodeURIComponent(entry.period);
       const countryEncoded = encodeURIComponent(country);
-      window.location.href = `detail.html?country=${countryEncoded}&period=${periodEncoded}`;
+      window.location.href = `categories.html?country=${countryEncoded}&period=${periodEncoded}`;
     });
 
     container.appendChild(div);
