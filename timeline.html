@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Art History Timeline</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  #timeline-container {
+    border-left: 3px solid #444;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  .timeline-entry {
+    margin-bottom: 30px;
+    cursor: pointer;
+    position: relative;
+  }
+  .timeline-entry::before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #444;
+    border-radius: 50%;
+  }
+  .timeline-entry:hover {
+    background-color: #f0f0f0;
+  }
+  h3 {
+    margin: 0 0 5px 0;
+  }
+  p {
+    margin: 2px 0;
+  }
+</style>
+</head>
+<body>
+  <h1 id="country-name">Timeline</h1>
+  <div id="timeline-container">
+    Loading timeline...
+  </div>
+
+  <script src="timeline.js"></script>
+</body>
+</html>
