@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const period = urlParams.get('period');
 
   if (!country || !period) {
-    document.getElementById('detail-container').textContent = "Invalid URL parameters.";
+    document.getElementById('detail-container').textContent = "Missing parameters.";
     return;
   }
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('detail-container').innerHTML = `
           <h2>${periodObj.period}</h2>
           <p><strong>${periodObj.start} - ${periodObj.end}</strong></p>
-          <p>${periodObj.details}</p>
+          <div>${periodObj.details}</div>
         `;
       }
     })

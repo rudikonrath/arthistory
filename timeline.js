@@ -5,13 +5,13 @@ let country = urlParams.get('country');
 if (!country) {
   document.getElementById('timeline-container').textContent = "No country specified!";
 } else {
-  // Capitalize first letter and lowercase rest
+  // Capitalize first letter, lowercase rest (to match filename)
   country = country.charAt(0).toUpperCase() + country.slice(1).toLowerCase();
 
-  // Show country name nicely formatted
+  // Show country name in heading
   document.getElementById('country-name').textContent = `Timeline for ${country}`;
 
-  // Fetch the JSON file
+  // Fetch country JSON file
   fetch(`data/${country}.json`)
     .then(response => {
       if (!response.ok) throw new Error("No data found");
@@ -32,16 +32,15 @@ function displayTimeline(data) {
   const container = document.getElementById('timeline-container');
   container.innerHTML = ''; // Clear loading text
 
-  data.forEach((entry, index) => {
+  data.forEach(entry => {
     const div = document.createElement('div');
     div.classList.add('timeline-entry');
     div.innerHTML = `
       <h3>${entry.period}</h3>
       <p><strong>${entry.start} - ${entry.end}</strong></p>
-      <p>${entry.details}</p>
+      <p>${entry.summary || entry.details || ''}</p>
     `;
-    // Make each entry clickable, leading to detailed page
-    // Assuming details page named like detail.html?country=France&period=Renaissance
+    // Click leads to detail page with country & period params
     div.addEventListener('click', () => {
       const periodEncoded = encodeURIComponent(entry.period);
       const countryEncoded = encodeURIComponent(country);
