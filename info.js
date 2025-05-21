@@ -1,38 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
   const urlParams = new URLSearchParams(window.location.search);
   const country = urlParams.get('country');
-  const period = urlParams.get('period');
   const category = urlParams.get('category');
+  const period = urlParams.get('period');
 
-  if (!country || !period || !category) {
+  if (!country || !category || !period) {
     document.getElementById('info-container').textContent = "Missing parameters.";
     return;
   }
 
-  // Capitalize country to match JSON filename e.g. France.json
-  const countryFile = country.charAt(0).toUpperCase() + country.slice(1).toLowerCase();
-
-  fetch(`data/${countryFile}.json`)
+  fetch(`data/${country}.json`)
     .then(res => {
       if (!res.ok) throw new Error("Data file not found.");
       return res.json();
     })
     .then(data => {
+      // Find the period entry
       const periodObj = data.find(entry => entry.period.toLowerCase() === period.toLowerCase());
       if (!periodObj) {
-        document.getElementById('info-container').textContent = `No data for period: ${period}`;
+        document.getElementById('info-container').textContent = `No details found for ${period}.`;
         return;
       }
 
-      const categoryContent = periodObj[category.toLowerCase()];
-      if (!categoryContent) {
-        document.getElementById('info-container').textContent = `No information for category: ${category}`;
+      // Check if category exists inside that period entry
+      if (!periodObj[category]) {
+        document.getElementById('info-container').textContent = `No data available for ${category}.`;
         return;
       }
 
+      // Display the content for the category
       document.getElementById('info-container').innerHTML = `
-        <h2>${periodObj.period} — ${category.charAt(0).toUpperCase() + category.slice(1)}</h2>
-        <p>${categoryContent}</p>
+        <h2>${periodObj.period} - ${category.charAt(0).toUpperCase() + category.slice(1)}</h2>
+        <p>${periodObj[category]}</p>
       `;
     })
     .catch(err => {
