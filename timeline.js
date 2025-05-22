@@ -42,6 +42,7 @@ function displayTimeline(data) {
         <button data-category="books">Books</button>
         <button data-category="film">Film</button>
         <button data-category="theatre">Theatre</button>
+        <button data-category="art">Art</button>
       </div>
     `;
 

@@ -3,18 +3,37 @@
     "period": "Renaissance",
     "start": 1500,
     "end": 1600,
-    "details": "Art, architecture, literature flourished during this time.",
-    "books": "Notable books include works by Machiavelli and Rabelais.",
-    "film": "No film existed in this era, but theatrical performances were rich.",
-    "theatre": "Theatre grew with Shakespeare’s early works influencing Europe."
-  },
-  {
-    "period": "Enlightenment",
-    "start": 1700,
-    "end": 1800,
-    "details": "Philosophy and scientific thought developed rapidly.",
-    "books": "Key Enlightenment texts include works by Voltaire and Rousseau.",
-    "film": "Theatre was still dominant; early experiments in shadow plays.",
-    "theatre": "Theatre became more political and socially engaged."
+    "details": "Art, architecture and literature flourished during this time.",
+    "books": {
+      "heading": "Important Literary Works",
+      "sections": [
+        {
+          "title": "Poetry",
+          "content": "Key poets include Ronsard and du Bellay."
+        },
+        {
+          "title": "Philosophy",
+          "content": "Montaigne’s essays laid groundwork for modern skepticism."
+        }
+      ]
+    },
+    "film": {
+      "heading": "Films Inspired by the Renaissance",
+      "sections": [
+        {
+          "title": "Modern Retellings",
+          "content": "Films like 'La Princesse de Montpensier' revisit Renaissance themes."
+        }
+      ]
+    },
+    "art": {
+      "heading": "Renaissance Art",
+      "sections": [
+        {
+          "title": "Painters",
+          "content": "Artists such as Jean Clouet and François Clouet flourished."
+        }
+      ]
+    }
   }
 ]
