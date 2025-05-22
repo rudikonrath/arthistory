@@ -1,14 +1,31 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>World Map</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <title>Interactive Map</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="map"></div>
+  <div class="page-container">
+    
+    <header class="map-title">
+      <h1>Explore Cultural Timelines</h1>
+      <p>Select a country to begin exploring its artistic history.</p>
+    </header>
 
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="script.js"></script>
+    <div class="map-window">
+      <iframe 
+        src="map.html" 
+        title="Interactive Map" 
+        frameborder="0"
+        class="map-iframe">
+      </iframe>
+    </div>
+
+    <footer class="map-info">
+      <p>Use the interactive map above to explore timelines by region. Click a country to begin.</p>
+    </footer>
+
+  </div>
 </body>
 </html>
