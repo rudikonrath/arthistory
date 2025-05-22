@@ -37,3 +37,4 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('info-container').textContent = `Error: ${err.message}`;
     });
 });
+
