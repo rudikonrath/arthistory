@@ -4,7 +4,7 @@ if (!countryParam) {
   document.getElementById('timeline-container').textContent = "No country specified!";
 } else {
   const countryMap = {
-    "United Kingdom": "united_kingdom",
+    "United Kingdom": "Unitedkingdom",
     // add more mappings here
   };
 
