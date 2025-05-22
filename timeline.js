@@ -5,8 +5,7 @@ let country = urlParams.get('country');
 if (!country) {
   document.getElementById('timeline-container').textContent = "No country specified!";
 } else {
-  // Capitalize first letter, lowercase rest (to match filename)
-  country = country.charAt(0).toUpperCase() + country.slice(1).toLowerCase();
+
 
   // Show country name in heading
   document.getElementById('country-name').textContent = `Timeline for ${country}`;
