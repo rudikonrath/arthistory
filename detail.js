@@ -11,9 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const countryFile = country.charAt(0).toUpperCase() + country.slice(1).toLowerCase();
 
-  // Path includes category subfolder or category in file name, adjust to your data structure
-  // e.g. data/France/Books.json or data/France_books.json
-  // I'll assume subfolder for clarity:
+
   const filePath = `data/${countryFile}/${category.toLowerCase()}.json`;
 
   fetch(filePath)
