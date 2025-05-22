@@ -7,7 +7,7 @@
     "literature": "Info for books goes here",
     "film": "Info for film goes here.",
     "theatre": "Info for theatre goes here",
-    "painting": "Info for paintings goes here",
+    "paintings": "Info for paintings goes here",
     "sculptures": "Info for the sculptures goes here"
   },
   {
@@ -18,7 +18,7 @@
     "literature": "Info for books goes here",
     "film": "Info for film goes here.",
     "theatre": "Info for theatre goes here",
-    "painting": "Info for paintings goes here",
+    "paintings": "Info for paintings goes here",
     "sculptures": "Info for the sculptures goes here"
   }
 ]
