@@ -1,24 +1,15 @@
 [
   {
-    "period": "Renaissance",
-    "start": 1500,
-    "end": 1600,
-    "details": "Test setup for reneissance.",
+    "period": "Placement",
+    "start": 1000,
+    "end": 1100,
+    "details": "Test setup for UK.",
     "literature": "Info for books goes here",
     "film": "Info for film goes here.",
     "theatre": "Info for theatre goes here",
     "paintings": "Info for paintings goes here",
     "sculptures": "Info for the sculptures goes here"
   },
-  {
-    "period": "Enlightenment",
-    "start": 1700,
-    "end": 1800,
-    "details": "Another test setup",
-    "literature": "Info for books goes here",
-    "film": "Info for film goes here.",
-    "theatre": "Info for theatre goes here",
-    "paintings": "Info for paintings goes here",
-    "sculptures": "Info for the sculptures goes here"
-  }
+  
 ]
+
