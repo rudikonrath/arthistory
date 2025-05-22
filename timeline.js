@@ -27,10 +27,9 @@ if (!country) {
     });
 }
 
-// Function to display timeline with clickable entries
 function displayTimeline(data) {
   const container = document.getElementById('timeline-container');
-  container.innerHTML = ''; // Clear loading text
+  container.innerHTML = '';
 
   data.forEach(entry => {
     const div = document.createElement('div');
@@ -38,13 +37,24 @@ function displayTimeline(data) {
     div.innerHTML = `
       <h3>${entry.period}</h3>
       <p><strong>${entry.start} - ${entry.end}</strong></p>
-      <p>${entry.summary || entry.details || ''}</p>
+      <p>${entry.details}</p>
+      <div class="category-boxes">
+        <button data-category="books">Books</button>
+        <button data-category="film">Film</button>
+        <button data-category="theatre">Theatre</button>
+      </div>
     `;
-    // Click leads to detail page with country & period params
-    div.addEventListener('click', () => {
-      const periodEncoded = encodeURIComponent(entry.period);
-      const countryEncoded = encodeURIComponent(country);
-      window.location.href = `categories.html?country=${countryEncoded}&period=${periodEncoded}`;
+
+    // Add event listeners to buttons
+    div.querySelectorAll('button').forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.stopPropagation(); // prevent any other click behavior
+        const category = button.getAttribute('data-category');
+        const periodEncoded = encodeURIComponent(entry.period);
+        const countryEncoded = encodeURIComponent(country);
+        const categoryEncoded = encodeURIComponent(category);
+        window.location.href = `info.html?country=${countryEncoded}&period=${periodEncoded}&category=${categoryEncoded}`;
+      });
     });
 
     container.appendChild(div);
