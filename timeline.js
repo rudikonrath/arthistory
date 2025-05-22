@@ -39,11 +39,11 @@ function displayTimeline(data) {
       <p><strong>${entry.start} - ${entry.end}</strong></p>
       <p>${entry.details}</p>
       <div class="category-boxes">
-        <button data-category="books">Books</button>
+        <button data-category="literature">Literature</button>
         <button data-category="film">Film</button>
         <button data-category="theatre">Theatre</button>
-        <button data-category="theatre">Paintings</button>
-        <button data-category="theatre">Sculptures</button>
+        <button data-category="paintings">Paintings</button>
+        <button data-category="sculptures">Sculptures</button>
       </div>
     `;
 
