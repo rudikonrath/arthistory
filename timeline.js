@@ -1,35 +1,3 @@
-const countryParam = new URLSearchParams(window.location.search).get('country');
-
-if (!countryParam) {
-  document.getElementById('timeline-container').textContent = "No country specified!";
-} else {
-  const countryMap = {
-    "United Kingdom": "Unitedkingdom",
-    // add more mappings here
-  };
-
-  const country = countryParam.trim();
-  const fileName = countryMap[country] || country.toLowerCase().replace(/ /g, "_");
-
-  // Set display name
-  document.getElementById('country-name').textContent = `Timeline for ${country}`;
-
-  // Load correct file
-  fetch(`data/${fileName}.json`)
-    .then(response => {
-      if (!response.ok) throw new Error("No data found");
-      return response.json();
-    })
-    .then(data => {
-      displayTimeline(data);
-    })
-    .catch(error => {
-      document.getElementById('timeline-container').innerHTML = `
-        <p>No timeline data found for <strong>${country}</strong>.</p>
-      `;
-    });
-}
-
 \// Parse country from URL
 const urlParams = new URLSearchParams(window.location.search);
 let country = urlParams.get('country');
