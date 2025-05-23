@@ -1,5 +1,13 @@
 // Initialize the map and set the view to a global zoom
-const map = L.map('map').setView([20, 0], 2);
+const map = L.map('map', {
+  minZoom: 2,
+  maxZoom: 18,
+  maxBounds: [
+    [-90, -180],
+    [90, 180]
+  ],
+  maxBoundsViscosity: 1.0
+}).setView([20, 0], 2);
 
 // Add a base layer from OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
