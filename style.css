@@ -43,3 +43,31 @@ body, html {
   font-size: 1rem;
   color: #555;
 }
+
+.timeline-period {
+  font-weight: bold;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 0.5em;
+}
+
+.timeline-period::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 15px;
+  height: 2px;
+  background: #333; /* line color */
+}
+
+.timeline-entry h4::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 0.5em;
+  width: 8px;
+  height: 8px;
+  background: #333;
+  border-radius: 50%;
+}

@@ -43,6 +43,7 @@ function displayTimeline(data) {
     const detailsWrapper = document.createElement('details');
     const summary = document.createElement('summary');
     summary.textContent = period;
+    summary.classList.add('timeline-period');
     detailsWrapper.appendChild(summary);
 
     // Sort entries by start date (just in case)
