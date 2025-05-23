@@ -2,7 +2,18 @@
   {
     "period": "Renaissance",
     "start": 1500,
-    "end": 1600,
+    "end": 1510,
+    "details": "Test setup for reneissance.",
+    "literature": "Info for books goes here",
+    "film": "Info for film goes here.",
+    "theatre": "Info for theatre goes here",
+    "paintings": "Info for paintings goes here",
+    "sculptures": "Info for the sculptures goes here"
+  },
+  {
+    "period": "Renaissance",
+    "start": 1510,
+    "end": 1520,
     "details": "Test setup for reneissance.",
     "literature": "Info for books goes here",
     "film": "Info for film goes here.",
