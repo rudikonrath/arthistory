@@ -40,24 +40,19 @@ function displayTimeline(data) {
 
   // Loop through each period
   for (const period in grouped) {
-    const periodSection = document.createElement('div');
-    periodSection.classList.add('period-section');
+    const detailsWrapper = document.createElement('details');
+    const summary = document.createElement('summary');
+    summary.textContent = period;
+    detailsWrapper.appendChild(summary);
 
-    // Period heading
-    const heading = document.createElement('h2');
-    heading.textContent = period;
-    periodSection.appendChild(heading);
+    // Sort entries by start date (just in case)
+    const sortedEntries = grouped[period].sort((a, b) => parseInt(a.start) - parseInt(b.start));
 
-    // Each entry (sub-period)
-    grouped[period].forEach(entry => {
-      const detailsWrapper = document.createElement('details');
-      const summary = document.createElement('summary');
-      summary.textContent = `${entry.start} – ${entry.end}`;
-      detailsWrapper.appendChild(summary);
-
-      const content = document.createElement('div');
-      content.classList.add('timeline-entry');
-      content.innerHTML = `
+    sortedEntries.forEach(entry => {
+      const entryDiv = document.createElement('div');
+      entryDiv.classList.add('timeline-entry');
+      entryDiv.innerHTML = `
+        <h4>${entry.start} – ${entry.end}</h4>
         <p>${entry.details}</p>
         <div class="category-boxes">
           <button data-category="literature">Literature</button>
@@ -68,8 +63,8 @@ function displayTimeline(data) {
         </div>
       `;
 
-      // Button click handlers
-      content.querySelectorAll('button').forEach(button => {
+      // Add button listeners
+      entryDiv.querySelectorAll('button').forEach(button => {
         button.addEventListener('click', (e) => {
           e.stopPropagation();
           const category = button.getAttribute('data-category');
@@ -80,10 +75,10 @@ function displayTimeline(data) {
         });
       });
 
-      detailsWrapper.appendChild(content);
-      periodSection.appendChild(detailsWrapper);
+      detailsWrapper.appendChild(entryDiv);
     });
 
-    container.appendChild(periodSection);
+    container.appendChild(detailsWrapper);
   }
 }
+
