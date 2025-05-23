@@ -47,42 +47,34 @@
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>
 
-  <form action="https://formsubmit.co/rudikonrath2104@icloud.com" method="POST" enctype="multipart/form-data">
-  <!-- Country -->
+<form action="hhttps://getform.io/f/amdmdggb" method="POST" enctype="multipart/form-data">
+  <h2>Submit Art Information</h2>
+
   <label for="country">Country:</label><br />
-  <input type="text" id="country" name="country" required><br /><br />
+  <input type="text" id="country" name="country" required><br><br>
 
-  <!-- Year -->
   <label for="year">Year:</label><br />
-  <input type="number" id="year" name="year" required><br /><br />
+  <input type="number" id="year" name="year" required><br><br>
 
-  <!-- Type of Art -->
   <label for="type">Type of Art:</label><br />
   <select id="type" name="type" required>
-    <option value="">-- Select --</option>
+    <option value="">Select one</option>
     <option value="Literature">Literature</option>
     <option value="Film">Film</option>
     <option value="Theatre">Theatre</option>
-    <option value="Paintings">Paintings</option>
-    <option value="Sculptures">Sculptures</option>
-  </select><br /><br />
+    <option value="Painting">Painting</option>
+    <option value="Sculpture">Sculpture</option>
+  </select><br><br>
 
-  <!-- Additional Description -->
-  <label for="message">Description or Context:</label><br />
-  <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+  <label for="submission">Submission:</label><br />
+  <textarea id="submission" name="submission" rows="5" required></textarea><br><br>
 
-  <!-- Upload Image -->
-  <label for="image">Attach an Image:</label><br />
-  <input type="file" id="image" name="attachment" accept="image/*"><br /><br />
+  <label for="image">Upload an image (optional):</label><br />
+  <input type="file" id="image" name="image"><br><br>
 
-  <!-- Disable CAPTCHA -->
-  <input type="hidden" name="_captcha" value="false">
-
-  <!-- Redirect after submission -->
-  <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
-
-  <!-- Submit Button -->
   <button type="submit">Submit</button>
+</form>
+
 </form>
 
 </body>
