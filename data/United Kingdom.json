@@ -1,8 +1,158 @@
 [
   {
-    "period": "Placement",
-    "start": 1000,
-    "end": 1100,
+    "period": "Roman Britain (43-410)",
+    "start": 43,
+    "end": 410,
+    "details": "Test setup for UK.",
+    "literature": "Info for books goes here",
+    "film": "Info for film goes here.",
+    "theatre": "Info for theatre goes here",
+    "paintings": "Info for paintings goes here",
+    "sculptures": "Info for the sculptures goes here"
+  },
+  {
+    "period": "Anglo Saxon Britain (410-1066)",
+    "start": 410,
+    "end": 1066,
+    "details": "Test setup for UK.",
+    "literature": "Info for books goes here",
+    "film": "Info for film goes here.",
+    "theatre": "Info for theatre goes here",
+    "paintings": "Info for paintings goes here",
+    "sculptures": "Info for the sculptures goes here"
+  },
+  {
+    "period": "Norman Period (1066-1154",
+    "start": 1066,
+    "end": 1154,
+    "details": "Test setup for UK.",
+    "literature": "Info for books goes here",
+    "film": "Info for film goes here.",
+    "theatre": "Info for theatre goes here",
+    "paintings": "Info for paintings goes here",
+    "sculptures": "Info for the sculptures goes here"
+  },
+  {
+    "period": "Plantagenet Period (1154-1485)",
+    "start": 1154,
+    "end": 1485,
+    "details": "Test setup for UK.",
+    "literature": "Info for books goes here",
+    "film": "Info for film goes here.",
+    "theatre": "Info for theatre goes here",
+    "paintings": "Info for paintings goes here",
+    "sculptures": "Info for the sculptures goes here"
+  },
+  {
+    "period": "Tudor Era (1485-1603)",
+    "start": 1485,
+    "end": 1603,
+    "details": "Test setup for UK.",
+    "literature": "Info for books goes here",
+    "film": "Info for film goes here.",
+    "theatre": "Info for theatre goes here",
+    "paintings": "Info for paintings goes here",
+    "sculptures": "Info for the sculptures goes here"
+  },
+  {
+    "period": "Stuart Era (1603-1714)",
+    "start": 1603,
+    "end": 1714,
+    "details": "Test setup for UK.",
+    "literature": "Info for books goes here",
+    "film": "Info for film goes here.",
+    "theatre": "Info for theatre goes here",
+    "paintings": "Info for paintings goes here",
+    "sculptures": "Info for the sculptures goes here"
+  },
+  {
+    "period": "Georgian Era (1714-1837)",
+    "start": 1714,
+    "end": 1837,
+    "details": "Test setup for UK.",
+    "literature": "Info for books goes here",
+    "film": "Info for film goes here.",
+    "theatre": "Info for theatre goes here",
+    "paintings": "Info for paintings goes here",
+    "sculptures": "Info for the sculptures goes here"
+  },
+  {
+    "period": "Victorian Era (1837-1901)",
+    "start": 1837,
+    "end": 1901,
+    "details": "Test setup for UK.",
+    "literature": "Info for books goes here",
+    "film": "Info for film goes here.",
+    "theatre": "Info for theatre goes here",
+    "paintings": "Info for paintings goes here",
+    "sculptures": "Info for the sculptures goes here"
+  },
+
+
+
+  {
+    "period": "20th Century Britain (1901-1999)",
+    "start": 1901,
+    "end": 1914,
+    "details": "Edwardian Era",
+    "literature": "Info for books goes here",
+    "film": "Info for film goes here.",
+    "theatre": "Info for theatre goes here",
+    "paintings": "Info for paintings goes here",
+    "sculptures": "Info for the sculptures goes here"
+  },
+  {
+    "period": "20th Century Britain (1901-1999)",
+    "start": 1914,
+    "end": 1918,
+    "details": "World War I",
+    "literature": "Info for books goes here",
+    "film": "Info for film goes here.",
+    "theatre": "Info for theatre goes here",
+    "paintings": "Info for paintings goes here",
+    "sculptures": "Info for the sculptures goes here"
+  },
+  {
+    "period": "20th Century Britain (1901-1999)",
+    "start": 1918,
+    "end": 1939,
+    "details": "Interwar Years",
+    "literature": "Info for books goes here",
+    "film": "Info for film goes here.",
+    "theatre": "Info for theatre goes here",
+    "paintings": "Info for paintings goes here",
+    "sculptures": "Info for the sculptures goes here"
+  },
+  {
+    "period": "20th Century Britain (1901-1999)",
+    "start": 1939,
+    "end": 1945,
+    "details": "World War 2",
+    "literature": "Info for books goes here",
+    "film": "Info for film goes here.",
+    "theatre": "Info for theatre goes here",
+    "paintings": "Info for paintings goes here",
+    "sculptures": "Info for the sculptures goes here"
+  },
+  {
+    "period": "20th Century Britain (1901-1999)",
+    "start": 1945,
+    "end": 1999,
+    "details": "Post-War Britain",
+    "literature": "Info for books goes here",
+    "film": "Info for film goes here.",
+    "theatre": "Info for theatre goes here",
+    "paintings": "Info for paintings goes here",
+    "sculptures": "Info for the sculptures goes here"
+  },
+
+
+
+
+  {
+    "period": "21st Century Britain (2000-)",
+    "start": 1714,
+    "end": 1837,
     "details": "Test setup for UK.",
     "literature": "Info for books goes here",
     "film": "Info for film goes here.",
