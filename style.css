@@ -44,23 +44,9 @@ body, html {
   color: #555;
 }
 
-details summary.timeline-period {
+.timeline-period {
   font-weight: bold;
-  font-size: 1.2em;
-  list-style: none; /* hides the default disclosure triangle */
-  position: relative;
-  margin: 20px 0;
-  padding-left: 30px;
+  font-size: 1.3em; /* Increase size as needed */
+  margin: 20px 0 10px;
   cursor: pointer;
-}
-
-details summary.timeline-period::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 2px;
-  background-color: #444; /* line color */
 }
