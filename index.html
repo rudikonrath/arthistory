@@ -53,13 +53,20 @@
   <!-- Replace with your actual Web3Forms Access Key -->
   <input type="hidden" name="access_key" value="8337ee00-00fe-410b-a0f0-7c368304fab6">
 
-  <label for="country">Country:</label><br />
+
+  <label for="image">Name:</label><br />
+  <input type="file" id="image" name="image"><br><br>
+
+  <label for="image">Email:</label><br />
+  <input type="file" id="image" name="image"><br><br>
+
+  <label for="country">Country*:</label><br />
   <input type="text" id="country" name="country" required><br><br>
 
-  <label for="year">Year:</label><br />
+  <label for="year">Year*:</label><br />
   <input type="number" id="year" name="year" required><br><br>
 
-  <label for="type">Type of Art:</label><br />
+  <label for="type">Type of Art*:</label><br />
   <select id="type" name="type" required>
     <option value="">Select one</option>
     <option value="Literature">Literature</option>
@@ -69,7 +76,7 @@
     <option value="Sculpture">Sculpture</option>
   </select><br><br>
 
-  <label for="submission">Submission:</label><br />
+  <label for="submission">Submission*:</label><br />
   <textarea id="submission" name="submission" rows="5" required></textarea><br><br>
 
   <label for="image">Upload an image (optional):</label><br />
