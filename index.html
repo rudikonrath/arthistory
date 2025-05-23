@@ -53,33 +53,54 @@
   <input type="hidden" name="access_key" value="8337ee00-00fe-410b-a0f0-7c368304fab6">
   <input type="hidden" name="redirect" value="https://rudikonrath.github.io/arthistory/">
 
+  <!-- Name and Email on the same row -->
+  <div style="display: flex; gap: 20px; margin-bottom: 15px;">
+    <div style="flex: 1;">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required style="width: 100%;">
+    </div>
 
-  <label for="image">Name:</label><br />
-  <input type="text" id="image" name="image"><br><br>
+    <div style="flex: 1;">
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required style="width: 100%;">
+    </div>
+  </div>
 
-  <label for="image">Email:</label><br />
-  <input type="text" id="image" name="image"><br><br>
-
+  <!-- Country dropdown -->
   <label for="country">Country*:</label><br />
-  <input type="text" id="country" name="country" required><br><br>
+  <select id="country" name="country" required style="width: 100%; margin-bottom: 15px;">
+    <option value="">Select a country</option>
+    <option value="United States">United States</option>
+    <option value="United Kingdom">United Kingdom</option>
+    <option value="France">France</option>
+    <option value="Spain">Spain</option>
+    <option value="Germany">Germany</option>
+    <option value="Italy">Italy</option>
+    <option value="Canada">Canada</option>
+    <option value="Australia">Australia</option>
+    <option value="Brazil">Brazil</option>
+    <option value="Japan">Japan</option>
+    <!-- Add more countries as needed -->
+  </select>
 
   <label for="year">Year*:</label><br />
-  <input type="number" id="year" name="year" required><br><br>
+  <input type="number" id="year" name="year" required style="width: 100%; margin-bottom: 15px;"><br />
 
   <label for="type">Type of Art*:</label><br />
-  <select id="type" name="type" required>
+  <select id="type" name="type" required style="width: 100%; margin-bottom: 15px;">
     <option value="">Select one</option>
     <option value="Literature">Literature</option>
     <option value="Film">Film</option>
     <option value="Theatre">Theatre</option>
     <option value="Painting">Painting</option>
     <option value="Sculpture">Sculpture</option>
-  </select><br><br>
+  </select>
 
   <label for="submission">Submission*:</label><br />
-  <textarea id="submission" name="submission" rows="5" required></textarea><br><br>
+  <textarea id="submission" name="submission" rows="5" required style="width: 100%; margin-bottom: 15px;"></textarea><br />
 
   <button type="submit">Submit</button>
+</form>
   
 </form>
 
