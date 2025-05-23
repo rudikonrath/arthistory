@@ -44,30 +44,23 @@ body, html {
   color: #555;
 }
 
-.timeline-period {
+details summary.timeline-period {
   font-weight: bold;
+  font-size: 1.2em;
+  list-style: none; /* hides the default disclosure triangle */
   position: relative;
-  padding-left: 20px;
-  margin-bottom: 0.5em;
+  margin: 20px 0;
+  padding-left: 30px;
+  cursor: pointer;
 }
 
-.timeline-period::before {
+details summary.timeline-period::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 0.6em;
-  width: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
   height: 2px;
-  background: #333; /* line color */
-}
-
-.timeline-entry h4::before {
-  content: '';
-  position: absolute;
-  left: -10px;
-  top: 0.5em;
-  width: 8px;
-  height: 8px;
-  background: #333;
-  border-radius: 50%;
+  background-color: #444; /* line color */
 }
