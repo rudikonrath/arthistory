@@ -1,4 +1,4 @@
-\// Parse country from URL
+// Parse country from URL
 const urlParams = new URLSearchParams(window.location.search);
 let country = urlParams.get('country');
 
