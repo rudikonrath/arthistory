@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('category-title').textContent = `Select category for ${period} in ${countryFormatted}`;
 
-  const categories = ['Books', 'Film', 'Theatre']; // Adjust as needed
+  const categories = ['Books', 'Film', 'Theatre']; 
 
   const container = document.getElementById('category-container');
   container.innerHTML = '';

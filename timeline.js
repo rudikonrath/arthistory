@@ -1,4 +1,3 @@
-// Parse country from URL
 const urlParams = new URLSearchParams(window.location.search);
 let country = urlParams.get('country');
 
@@ -6,10 +5,9 @@ if (!country) {
   document.getElementById('timeline-container').textContent = "No country specified!";
 } else {
 
-  // Show country name in heading
+
   document.getElementById('country-name').textContent = `Timeline for ${country}`;
 
-  // Fetch country JSON file
   fetch(`data/${country}.json`)
     .then(response => {
       if (!response.ok) throw new Error("No data found");
@@ -29,7 +27,7 @@ function displayTimeline(data) {
   const container = document.getElementById('timeline-container');
   container.innerHTML = '';
 
-  // Group entries by period
+
   const grouped = {};
   data.forEach(entry => {
     if (!grouped[entry.period]) {
@@ -38,7 +36,7 @@ function displayTimeline(data) {
     grouped[entry.period].push(entry);
   });
 
-  // Loop through each period
+
   for (const period in grouped) {
     const detailsWrapper = document.createElement('details');
     const summary = document.createElement('summary');
@@ -46,7 +44,7 @@ function displayTimeline(data) {
     summary.classList.add('timeline-period');
     detailsWrapper.appendChild(summary);
 
-    // Sort entries by start date (just in case)
+
     const sortedEntries = grouped[period].sort((a, b) => parseInt(a.start) - parseInt(b.start));
 
     sortedEntries.forEach(entry => {
@@ -64,7 +62,6 @@ function displayTimeline(data) {
         </div>
       `;
 
-      // Add button listeners
       entryDiv.querySelectorAll('button').forEach(button => {
         button.addEventListener('click', (e) => {
           e.stopPropagation();

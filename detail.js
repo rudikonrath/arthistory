@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return res.json();
     })
     .then(data => {
-      // Find period entry inside category data
+
       const periodObj = data.find(entry => entry.period.toLowerCase() === period.toLowerCase());
       if (!periodObj) {
         document.getElementById('detail-container').textContent = `No details found for ${period} in category ${category}`;
